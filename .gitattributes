@@ -1,0 +1,8 @@
+cfht_spec.zip filter=lfs diff=lfs merge=lfs -text
+*.fits filter=lfs diff=lfs merge=lfs -text
+/analysis/reduced_data/*.fits filter=lfs diff=lfs merge=lfs -text
+soar/m1/0115_sci.fits filter=lfs diff=lfs merge=lfs -text
+0117_sci_lamp.fits filter=lfs diff=lfs merge=lfs -text
+0120_sci_lamp.fits filter=lfs diff=lfs merge=lfs -text
+soar/m5/0119_sci.fits filter=lfs diff=lfs merge=lfs -text
+0115_sci.fits filter=lfs diff=lfs merge=lfs -text
