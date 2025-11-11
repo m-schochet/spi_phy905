@@ -1,0 +1,19 @@
+[15:24:09][I]: Starting Goodman HTS Pipeline Log
+[15:24:09][I]: Local Time    : 2025-11-05 15:24:09.784116
+[15:24:09][I]: Universal Time: 2025-11-05 20:24:09.784152
+[15:24:10][W]: Current Version '1.3.13' is outdated.
+[15:24:10][I]: Latest Release: 2.0.0rc1
+[15:24:21][W]: Determining trim section. Assuming you have only one kind of data in this folder
+[15:24:21][I]: Trim Section: [51:4110,2:1896]
+[15:24:21][I]: Overscan regions has been tested for ROI Spectroscopic 1x1, 2x2 and 3x3
+[15:24:21][I]: Overscan Region: [6:49,1:1896]
+[15:24:22][I]: Cosmic rays rejected using astroscrappy's lacosmic
+[15:24:22][I]: Saving image: /Users/mschochet/Documents/GitHub/spi_phy905/soar/m5/RED/cto_0119_sci.fits
+[15:24:22][I]: Saving FITS file to cto_0119_sci.fits
+[15:24:23][I]: Cosmic rays rejected using astroscrappy's lacosmic
+[15:24:23][I]: Saving image: /Users/mschochet/Documents/GitHub/spi_phy905/soar/m5/RED/cto_0120_sci_lamp.fits
+[15:24:23][I]: Saving FITS file to cto_0120_sci_lamp.fits
+[15:24:23][W]: Determining trim section. Assuming you have only one kind of data in this folder
+[15:24:23][I]: Trim Section: [51:4110,2:1896]
+[15:24:23][I]: Overscan regions has been tested for ROI Spectroscopic 1x1, 2x2 and 3x3
+[15:24:23][I]: Overscan Region: [6:49,1:1896]
