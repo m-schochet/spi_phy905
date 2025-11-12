@@ -1,0 +1,240 @@
+[15:24:37][    INFO]: Starting Goodman HTS Pipeline Log [core.setup_logging:2960]
+[15:24:37][    INFO]: Local Time    : 2025-11-05 15:24:37.114048 [core.setup_logging:2961]
+[15:24:37][    INFO]: Universal Time: 2025-11-05 20:24:37.114085 [core.setup_logging:2963]
+[15:24:37][ WARNING]: Current Version '1.3.13' is outdated. [core.setup_logging:2979]
+[15:24:37][    INFO]: Latest Release: 2.0.0rc1 [core.setup_logging:2980]
+[15:24:38][   DEBUG]: Spectroscopic Data Classification [core.classify_spectroscopic_data:699]
+[15:24:38][   DEBUG]: Adding OBJECT group [core.classify_spectroscopic_data:784]
+[15:24:38][   DEBUG]: Adding FITS LINEAR wcs keywords to header. [core.add_wcs_keys:86]
+[15:24:38][    INFO]: Searching spectroscopic targets in file: cto_0119_sci.fits [core.__call__:4289]
+[15:24:38][   DEBUG]: Slit size: 0.45 [core.__call__:4301]
+[15:24:38][   DEBUG]: Serial binning: 1 [core.__call__:4303]
+[15:24:40][    INFO]: Fitting Linear1D model to spatial profile to detect background shape [core.fit_background:4368]
+[15:24:41][    INFO]: Subtracting background shape and level spatial profile for better target identification [core.subtract_background:4449]
+[15:24:41][   DEBUG]: New background level after subtraction was found to be 2.00 [core.subtract_background:4470]
+[15:24:42][    INFO]: Finding all peaks in spatial profile [core.get_peaks:4530]
+[15:24:42][   DEBUG]: Found 1 peaks [core.get_peaks:4548]
+[15:24:42][    INFO]: Selecting the 3 most intense peaks out of 1 found [core.filter_peaks:4615]
+[15:24:42][    INFO]: Validating peaks by setting threshold 3 times the background level 3.45 [core.filter_peaks:4627]
+[15:24:42][   DEBUG]: Intensity threshold set to: 10.35 [core.filter_peaks:4630]
+[15:24:42][    INFO]: Selecting peak: Centered: 1070.0 Intensity 115.000 [core.filter_peaks:4636]
+[15:24:43][    INFO]: Fitting 'Moffat1D' to spatial profile of targets. [core._fit_moffat:4797]
+[15:24:43][   DEBUG]: Setting FWHM minimum value to 1.5 pixels. Set it with `--target-min-width`. [core._fit_moffat:4800]
+[15:24:43][   DEBUG]: Setting FWHM maximum value to 12 pixels. Set it with `--target-max-width`. [core._fit_moffat:4803]
+[15:24:43][   DEBUG]: Using minimum FWHM = 1.5 pixels. [core._fit_moffat:4804]
+[15:24:43][   DEBUG]: Using maximum FWHM = 12 pixels. [core._fit_moffat:4805]
+[15:24:43][    INFO]: Recording target centered at: 1069.95, FWHM: 9.57 [core._fit_moffat:4822]
+[15:24:44][    INFO]: Identified 1 target [core.__call__:4342]
+[15:24:44][   DEBUG]: RMS Error of unclipped trace differences 0.507 [core.trace:3103]
+[15:24:44][   DEBUG]: Re-fitting the trace for a better trace. [core.trace:3121]
+[15:24:44][   DEBUG]: RMS Error after sigma-clipping trace differences 0.302 [core.trace:3134]
+[15:24:44][    INFO]: Target tracing RMS error: 0.302 [core.trace:3153]
+[15:24:45][   DEBUG]: Adding trace to list [core.trace_targets:3260]
+[15:24:45][   DEBUG]: Adding trace information: GSP_TMOD = Polynomial1D / Model name used to fit trace [core.record_trace_information:2818]
+[15:24:45][   DEBUG]: Adding trace information: GSP_TORD = 2 / Degree of the model used to fit target trace [core.record_trace_information:2818]
+[15:24:45][   DEBUG]: Adding trace information: GSP_TC00 = 1067.998140708149 / Parameter c0 [core.record_trace_information:2818]
+[15:24:45][   DEBUG]: Adding trace information: GSP_TC01 = 0.001085706049222895 / Parameter c1 [core.record_trace_information:2818]
+[15:24:45][   DEBUG]: Adding trace information: GSP_TC02 = -7.391682308378583e-08 / Parameter c2 [core.record_trace_information:2818]
+[15:24:45][   DEBUG]: Adding trace information: GSP_TERR = 0.3020570204837429 / RMS error of target trace [core.record_trace_information:2818]
+[15:24:45][    INFO]: Fractional Pixel Extraction for cto_0119_sci.fits [core.extract_fractional_pixel:1191]
+[15:24:45][    INFO]: Extraction aperture in first column: 1058.43:1077.57 [core.extract_fractional_pixel:1234]
+[15:24:46][ WARNING]: Setting mask to None, otherwise saving will fail. [core.extract_fractional_pixel:1319]
+[15:24:46][    INFO]: Background extraction zone 1: 1010.56:1029.71 column 1 [core.extraction:1146]
+[15:24:46][    INFO]: Background extraction zone 2: 1106.29:1125.43 column 1 [core.extraction:1152]
+[15:24:46][    INFO]: Saving uncalibrated(w) extracted spectrum to file: ecto_0119_sci.fits [core.save_extracted:2870]
+[15:24:46][    INFO]: Saving FITS file to ecto_0119_sci.fits [core.write_fits:3344]
+[15:24:47][   DEBUG]: Adding FITS LINEAR wcs keywords to header. [core.add_wcs_keys:86]
+[15:24:47][    INFO]: Searching spectroscopic targets in file: cto_0120_sci_lamp.fits [core.__call__:4289]
+[15:24:47][   DEBUG]: Slit size: 0.45 [core.__call__:4301]
+[15:24:47][   DEBUG]: Serial binning: 1 [core.__call__:4303]
+[15:24:48][    INFO]: Fitting Linear1D model to spatial profile to detect background shape [core.fit_background:4368]
+[15:24:50][    INFO]: Subtracting background shape and level spatial profile for better target identification [core.subtract_background:4449]
+[15:24:50][   DEBUG]: New background level after subtraction was found to be 13.91 [core.subtract_background:4470]
+[15:24:50][    INFO]: Finding all peaks in spatial profile [core.get_peaks:4530]
+[15:24:50][   DEBUG]: Found 116 peaks [core.get_peaks:4548]
+[15:24:51][    INFO]: Selecting the 3 most intense peaks out of 116 found [core.filter_peaks:4615]
+[15:24:51][    INFO]: Validating peaks by setting threshold 3 times the background level 0.78 [core.filter_peaks:4627]
+[15:24:51][   DEBUG]: Intensity threshold set to: 2.33 [core.filter_peaks:4630]
+[15:24:51][    INFO]: Selecting peak: Centered: 663.0 Intensity 25.866 [core.filter_peaks:4636]
+[15:24:51][    INFO]: Selecting peak: Centered: 754.0 Intensity 24.856 [core.filter_peaks:4636]
+[15:24:51][    INFO]: Selecting peak: Centered: 719.0 Intensity 23.898 [core.filter_peaks:4636]
+[15:24:52][    INFO]: Fitting 'Moffat1D' to spatial profile of targets. [core._fit_moffat:4797]
+[15:24:52][   DEBUG]: Setting FWHM minimum value to 1.5 pixels. Set it with `--target-min-width`. [core._fit_moffat:4800]
+[15:24:52][   DEBUG]: Setting FWHM maximum value to 12 pixels. Set it with `--target-max-width`. [core._fit_moffat:4803]
+[15:24:52][   DEBUG]: Using minimum FWHM = 1.5 pixels. [core._fit_moffat:4804]
+[15:24:52][   DEBUG]: Using maximum FWHM = 12 pixels. [core._fit_moffat:4805]
+[15:24:52][   ERROR]: Discarding target centered at: 784.493 [core._fit_moffat:4827]
+[15:24:52][   ERROR]: Moffat model FWHM is 355.0278532582207, larger than  current limit 12. Set a maximum limit with `--profile-max-width`. [core._fit_moffat:4835]
+[15:24:52][   ERROR]: Discarding target centered at: 784.494 [core._fit_moffat:4827]
+[15:24:52][   ERROR]: Moffat model FWHM is 355.0309139227825, larger than  current limit 12. Set a maximum limit with `--profile-max-width`. [core._fit_moffat:4835]
+[15:24:52][   ERROR]: Discarding target centered at: 784.494 [core._fit_moffat:4827]
+[15:24:52][   ERROR]: Moffat model FWHM is 355.03089255824034, larger than  current limit 12. Set a maximum limit with `--profile-max-width`. [core._fit_moffat:4835]
+[15:24:52][   ERROR]: Impossible to identify targets. [core.__call__:4340]
+[15:25:42][I]: Starting Goodman HTS Pipeline Log
+[15:25:42][I]: Local Time    : 2025-11-05 15:25:42.305526
+[15:25:42][I]: Universal Time: 2025-11-05 20:25:42.305562
+[15:25:42][W]: Current Version '1.3.13' is outdated.
+[15:25:42][I]: Latest Release: 2.0.0rc1
+[15:25:54][    INFO]: Starting Goodman HTS Pipeline Log [core.setup_logging:2960]
+[15:25:54][    INFO]: Local Time    : 2025-11-05 15:25:54.578547 [core.setup_logging:2961]
+[15:25:54][    INFO]: Universal Time: 2025-11-05 20:25:54.578593 [core.setup_logging:2963]
+[15:25:54][ WARNING]: Current Version '1.3.13' is outdated. [core.setup_logging:2979]
+[15:25:54][    INFO]: Latest Release: 2.0.0rc1 [core.setup_logging:2980]
+[15:25:55][   DEBUG]: Spectroscopic Data Classification [core.classify_spectroscopic_data:699]
+[15:25:55][   DEBUG]: Adding OBJECT group [core.classify_spectroscopic_data:784]
+[15:25:55][   DEBUG]: Adding FITS LINEAR wcs keywords to header. [core.add_wcs_keys:86]
+[15:25:55][    INFO]: Searching spectroscopic targets in file: cto_0119_sci.fits [core.__call__:4289]
+[15:25:55][   DEBUG]: Slit size: 0.45 [core.__call__:4301]
+[15:25:55][   DEBUG]: Serial binning: 1 [core.__call__:4303]
+[15:25:57][    INFO]: Fitting Linear1D model to spatial profile to detect background shape [core.fit_background:4368]
+[15:25:58][    INFO]: Subtracting background shape and level spatial profile for better target identification [core.subtract_background:4449]
+[15:25:58][   DEBUG]: New background level after subtraction was found to be 2.00 [core.subtract_background:4470]
+[15:25:58][    INFO]: Finding all peaks in spatial profile [core.get_peaks:4530]
+[15:25:58][   DEBUG]: Found 1 peaks [core.get_peaks:4548]
+[15:25:59][    INFO]: Selecting the 3 most intense peaks out of 1 found [core.filter_peaks:4615]
+[15:25:59][    INFO]: Validating peaks by setting threshold 3 times the background level 3.45 [core.filter_peaks:4627]
+[15:25:59][   DEBUG]: Intensity threshold set to: 10.35 [core.filter_peaks:4630]
+[15:25:59][    INFO]: Selecting peak: Centered: 1070.0 Intensity 115.000 [core.filter_peaks:4636]
+[15:25:59][    INFO]: Fitting 'Moffat1D' to spatial profile of targets. [core._fit_moffat:4797]
+[15:25:59][   DEBUG]: Setting FWHM minimum value to 1.5 pixels. Set it with `--target-min-width`. [core._fit_moffat:4800]
+[15:25:59][   DEBUG]: Setting FWHM maximum value to 12 pixels. Set it with `--target-max-width`. [core._fit_moffat:4803]
+[15:25:59][   DEBUG]: Using minimum FWHM = 1.5 pixels. [core._fit_moffat:4804]
+[15:25:59][   DEBUG]: Using maximum FWHM = 12 pixels. [core._fit_moffat:4805]
+[15:25:59][    INFO]: Recording target centered at: 1069.95, FWHM: 9.57 [core._fit_moffat:4822]
+[15:26:00][    INFO]: Identified 1 target [core.__call__:4342]
+[15:26:00][   DEBUG]: RMS Error of unclipped trace differences 0.507 [core.trace:3103]
+[15:26:00][   DEBUG]: Re-fitting the trace for a better trace. [core.trace:3121]
+[15:26:00][   DEBUG]: RMS Error after sigma-clipping trace differences 0.302 [core.trace:3134]
+[15:26:00][    INFO]: Target tracing RMS error: 0.302 [core.trace:3153]
+[15:26:01][   DEBUG]: Adding trace to list [core.trace_targets:3260]
+[15:26:02][   DEBUG]: Adding trace information: GSP_TMOD = Polynomial1D / Model name used to fit trace [core.record_trace_information:2818]
+[15:26:02][   DEBUG]: Adding trace information: GSP_TORD = 2 / Degree of the model used to fit target trace [core.record_trace_information:2818]
+[15:26:02][   DEBUG]: Adding trace information: GSP_TC00 = 1067.998140708149 / Parameter c0 [core.record_trace_information:2818]
+[15:26:02][   DEBUG]: Adding trace information: GSP_TC01 = 0.001085706049222895 / Parameter c1 [core.record_trace_information:2818]
+[15:26:02][   DEBUG]: Adding trace information: GSP_TC02 = -7.391682308378583e-08 / Parameter c2 [core.record_trace_information:2818]
+[15:26:02][   DEBUG]: Adding trace information: GSP_TERR = 0.3020570204837429 / RMS error of target trace [core.record_trace_information:2818]
+[15:26:02][    INFO]: Fractional Pixel Extraction for cto_0119_sci.fits [core.extract_fractional_pixel:1191]
+[15:26:02][    INFO]: Extraction aperture in first column: 1058.43:1077.57 [core.extract_fractional_pixel:1234]
+[15:26:02][ WARNING]: Setting mask to None, otherwise saving will fail. [core.extract_fractional_pixel:1319]
+[15:26:02][    INFO]: Background extraction zone 1: 1010.56:1029.71 column 1 [core.extraction:1146]
+[15:26:02][    INFO]: Background extraction zone 2: 1106.29:1125.43 column 1 [core.extraction:1152]
+[15:26:02][    INFO]: Saving uncalibrated(w) extracted spectrum to file: ecto_0119_sci.fits [core.save_extracted:2870]
+[15:26:02][    INFO]: Saving FITS file to ecto_0119_sci.fits [core.write_fits:3344]
+[15:26:03][   DEBUG]: Adding FITS LINEAR wcs keywords to header. [core.add_wcs_keys:86]
+[15:26:03][    INFO]: Searching spectroscopic targets in file: cto_0120_sci_lamp.fits [core.__call__:4289]
+[15:26:03][   DEBUG]: Slit size: 0.45 [core.__call__:4301]
+[15:26:03][   DEBUG]: Serial binning: 1 [core.__call__:4303]
+[15:26:05][    INFO]: Fitting Linear1D model to spatial profile to detect background shape [core.fit_background:4368]
+[15:26:06][    INFO]: Subtracting background shape and level spatial profile for better target identification [core.subtract_background:4449]
+[15:26:06][   DEBUG]: New background level after subtraction was found to be 13.91 [core.subtract_background:4470]
+[15:26:06][    INFO]: Finding all peaks in spatial profile [core.get_peaks:4530]
+[15:26:06][   DEBUG]: Found 116 peaks [core.get_peaks:4548]
+[15:26:06][    INFO]: Selecting the 3 most intense peaks out of 116 found [core.filter_peaks:4615]
+[15:26:06][    INFO]: Validating peaks by setting threshold 3 times the background level 0.78 [core.filter_peaks:4627]
+[15:26:06][   DEBUG]: Intensity threshold set to: 2.33 [core.filter_peaks:4630]
+[15:26:06][    INFO]: Selecting peak: Centered: 663.0 Intensity 25.866 [core.filter_peaks:4636]
+[15:26:06][    INFO]: Selecting peak: Centered: 754.0 Intensity 24.856 [core.filter_peaks:4636]
+[15:26:06][    INFO]: Selecting peak: Centered: 719.0 Intensity 23.898 [core.filter_peaks:4636]
+[15:26:07][    INFO]: Fitting 'Moffat1D' to spatial profile of targets. [core._fit_moffat:4797]
+[15:26:07][   DEBUG]: Setting FWHM minimum value to 1.5 pixels. Set it with `--target-min-width`. [core._fit_moffat:4800]
+[15:26:07][   DEBUG]: Setting FWHM maximum value to 12 pixels. Set it with `--target-max-width`. [core._fit_moffat:4803]
+[15:26:07][   DEBUG]: Using minimum FWHM = 1.5 pixels. [core._fit_moffat:4804]
+[15:26:07][   DEBUG]: Using maximum FWHM = 12 pixels. [core._fit_moffat:4805]
+[15:26:07][   ERROR]: Discarding target centered at: 784.493 [core._fit_moffat:4827]
+[15:26:07][   ERROR]: Moffat model FWHM is 355.0278532582207, larger than  current limit 12. Set a maximum limit with `--profile-max-width`. [core._fit_moffat:4835]
+[15:26:07][   ERROR]: Discarding target centered at: 784.494 [core._fit_moffat:4827]
+[15:26:07][   ERROR]: Moffat model FWHM is 355.0309139227825, larger than  current limit 12. Set a maximum limit with `--profile-max-width`. [core._fit_moffat:4835]
+[15:26:07][   ERROR]: Discarding target centered at: 784.494 [core._fit_moffat:4827]
+[15:26:07][   ERROR]: Moffat model FWHM is 355.03089255824034, larger than  current limit 12. Set a maximum limit with `--profile-max-width`. [core._fit_moffat:4835]
+[15:26:07][   ERROR]: Impossible to identify targets. [core.__call__:4340]
+[15:26:26][    INFO]: Starting Goodman HTS Pipeline Log [core.setup_logging:2960]
+[15:26:26][    INFO]: Local Time    : 2025-11-05 15:26:26.871818 [core.setup_logging:2961]
+[15:26:26][    INFO]: Universal Time: 2025-11-05 20:26:26.871859 [core.setup_logging:2963]
+[15:26:26][   ERROR]: Unauthorized GitHub API Access reached maximum [core.setup_logging:2982]
+[15:26:26][    INFO]: Current Version: 1.3.13 [core.setup_logging:2983]
+[15:26:27][   DEBUG]: Spectroscopic Data Classification [core.classify_spectroscopic_data:699]
+[15:26:27][   DEBUG]: Adding OBJECT group [core.classify_spectroscopic_data:784]
+[15:26:27][   DEBUG]: Adding FITS LINEAR wcs keywords to header. [core.add_wcs_keys:86]
+[15:26:27][    INFO]: Searching spectroscopic targets in file: cto_0119_sci.fits [core.__call__:4289]
+[15:26:27][   DEBUG]: Slit size: 0.45 [core.__call__:4301]
+[15:26:27][   DEBUG]: Serial binning: 1 [core.__call__:4303]
+[15:26:29][    INFO]: Fitting Linear1D model to spatial profile to detect background shape [core.fit_background:4368]
+[15:26:30][    INFO]: Subtracting background shape and level spatial profile for better target identification [core.subtract_background:4449]
+[15:26:30][   DEBUG]: New background level after subtraction was found to be 2.00 [core.subtract_background:4470]
+[15:26:30][    INFO]: Finding all peaks in spatial profile [core.get_peaks:4530]
+[15:26:30][   DEBUG]: Found 1 peaks [core.get_peaks:4548]
+[15:26:30][    INFO]: Selecting the 3 most intense peaks out of 1 found [core.filter_peaks:4615]
+[15:26:30][    INFO]: Validating peaks by setting threshold 3 times the background level 3.45 [core.filter_peaks:4627]
+[15:26:30][   DEBUG]: Intensity threshold set to: 10.35 [core.filter_peaks:4630]
+[15:26:30][    INFO]: Selecting peak: Centered: 1070.0 Intensity 115.000 [core.filter_peaks:4636]
+[15:26:31][    INFO]: Fitting 'Moffat1D' to spatial profile of targets. [core._fit_moffat:4797]
+[15:26:31][   DEBUG]: Setting FWHM minimum value to 1.5 pixels. Set it with `--target-min-width`. [core._fit_moffat:4800]
+[15:26:31][   DEBUG]: Setting FWHM maximum value to 12 pixels. Set it with `--target-max-width`. [core._fit_moffat:4803]
+[15:26:31][   DEBUG]: Using minimum FWHM = 1.5 pixels. [core._fit_moffat:4804]
+[15:26:31][   DEBUG]: Using maximum FWHM = 12 pixels. [core._fit_moffat:4805]
+[15:26:31][    INFO]: Recording target centered at: 1069.95, FWHM: 9.57 [core._fit_moffat:4822]
+[15:26:32][    INFO]: Identified 1 target [core.__call__:4342]
+[15:26:32][   DEBUG]: RMS Error of unclipped trace differences 0.507 [core.trace:3103]
+[15:26:32][   DEBUG]: Re-fitting the trace for a better trace. [core.trace:3121]
+[15:26:32][   DEBUG]: RMS Error after sigma-clipping trace differences 0.302 [core.trace:3134]
+[15:26:32][    INFO]: Target tracing RMS error: 0.302 [core.trace:3153]
+[15:26:33][   DEBUG]: Adding trace to list [core.trace_targets:3260]
+[15:26:33][   DEBUG]: Adding trace information: GSP_TMOD = Polynomial1D / Model name used to fit trace [core.record_trace_information:2818]
+[15:26:33][   DEBUG]: Adding trace information: GSP_TORD = 2 / Degree of the model used to fit target trace [core.record_trace_information:2818]
+[15:26:33][   DEBUG]: Adding trace information: GSP_TC00 = 1067.998140708149 / Parameter c0 [core.record_trace_information:2818]
+[15:26:33][   DEBUG]: Adding trace information: GSP_TC01 = 0.001085706049222895 / Parameter c1 [core.record_trace_information:2818]
+[15:26:33][   DEBUG]: Adding trace information: GSP_TC02 = -7.391682308378583e-08 / Parameter c2 [core.record_trace_information:2818]
+[15:26:33][   DEBUG]: Adding trace information: GSP_TERR = 0.3020570204837429 / RMS error of target trace [core.record_trace_information:2818]
+[15:26:33][    INFO]: Fractional Pixel Extraction for cto_0119_sci.fits [core.extract_fractional_pixel:1191]
+[15:26:33][    INFO]: Extraction aperture in first column: 1058.43:1077.57 [core.extract_fractional_pixel:1234]
+[15:26:33][ WARNING]: Setting mask to None, otherwise saving will fail. [core.extract_fractional_pixel:1319]
+[15:26:33][    INFO]: Background extraction zone 1: 1010.56:1029.71 column 1 [core.extraction:1146]
+[15:26:33][    INFO]: Background extraction zone 2: 1106.29:1125.43 column 1 [core.extraction:1152]
+[15:26:33][    INFO]: Saving uncalibrated(w) extracted spectrum to file: ecto_0119_sci.fits [core.save_extracted:2870]
+[15:26:33][    INFO]: Saving FITS file to ecto_0119_sci.fits [core.write_fits:3344]
+[15:27:03][I]: Starting Goodman HTS Pipeline Log
+[15:27:03][I]: Local Time    : 2025-11-05 15:27:03.186682
+[15:27:03][I]: Universal Time: 2025-11-05 20:27:03.186717
+[15:27:03][W]: Current Version '1.3.13' is outdated.
+[15:27:03][I]: Latest Release: 2.0.0rc1
+[15:27:03][I]: Searching spectroscopic targets in file: cto_0119_sci.fits
+[15:27:03][I]: Fitting Linear1D model to spatial profile to detect background shape
+[15:27:03][I]: Subtracting background shape and level spatial profile for better target identification
+[15:27:03][I]: Finding all peaks in spatial profile
+[15:27:03][I]: Selecting the 3 most intense peaks out of 1 found
+[15:27:03][I]: Validating peaks by setting threshold 3 times the background level 3.45
+[15:27:03][I]: Selecting peak: Centered: 1070.0 Intensity 115.000
+[15:27:03][I]: Fitting 'Moffat1D' to spatial profile of targets.
+[15:27:03][I]: Recording target centered at: 1069.95, FWHM: 9.57
+[15:27:03][I]: Identified 1 target
+[15:27:03][I]: Target tracing RMS error: 0.302
+[15:27:03][I]: Fractional Pixel Extraction for cto_0119_sci.fits
+[15:27:03][I]: Extraction aperture in first column: 1058.43:1077.57
+[15:27:03][W]: Setting mask to None, otherwise saving will fail.
+[15:27:03][I]: Background extraction zone 1: 1010.56:1029.71 column 1
+[15:27:03][I]: Background extraction zone 2: 1106.29:1125.43 column 1
+[15:27:03][I]: Saving uncalibrated(w) extracted spectrum to file: ecto_0119_sci.fits
+[15:27:03][I]: Saving FITS file to ecto_0119_sci.fits
+[15:27:11][I]: Starting Goodman HTS Pipeline Log
+[15:27:11][I]: Local Time    : 2025-11-05 15:27:11.960021
+[15:27:11][I]: Universal Time: 2025-11-05 20:27:11.960057
+[15:27:12][W]: Current Version '1.3.13' is outdated.
+[15:27:12][I]: Latest Release: 2.0.0rc1
+[15:27:12][I]: Searching spectroscopic targets in file: cto_0119_sci.fits
+[15:27:12][I]: Fitting Linear1D model to spatial profile to detect background shape
+[15:27:12][I]: Subtracting background shape and level spatial profile for better target identification
+[15:27:12][I]: Finding all peaks in spatial profile
+[15:27:12][I]: Selecting the 3 most intense peaks out of 1 found
+[15:27:12][I]: Validating peaks by setting threshold 3 times the background level 3.45
+[15:27:12][I]: Selecting peak: Centered: 1070.0 Intensity 115.000
+[15:27:12][I]: Fitting 'Moffat1D' to spatial profile of targets.
+[15:27:12][I]: Recording target centered at: 1069.95, FWHM: 9.57
+[15:27:12][I]: Identified 1 target
+[15:27:12][I]: Target tracing RMS error: 0.302
+[15:27:12][I]: Fractional Pixel Extraction for cto_0119_sci.fits
+[15:27:12][I]: Extraction aperture in first column: 1058.43:1077.57
+[15:27:12][W]: Setting mask to None, otherwise saving will fail.
+[15:27:12][I]: Background extraction zone 1: 1010.56:1029.71 column 1
+[15:27:12][I]: Background extraction zone 2: 1106.29:1125.43 column 1
+[15:27:12][I]: Saving uncalibrated(w) extracted spectrum to file: ecto_0119_sci.fits
+[15:27:12][I]: Saving FITS file to ecto_0119_sci.fits
