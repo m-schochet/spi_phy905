@@ -19,7 +19,7 @@ history:
     software: !core/software-1.0.0 {name: asdf-astropy, version: 0.8.0}
 m5_model: !transform/linear1d-1.1.0
   inputs: [x]
-  intercept: 6289.565143467628
+  intercept: 6289.565143197554
   outputs: [y]
-  slope: 0.30122527858448117
+  slope: 0.3012252786754997
 ...
